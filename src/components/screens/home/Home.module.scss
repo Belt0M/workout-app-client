@@ -1,0 +1,13 @@
+@import 'src/assets/styles/variables';
+
+.heading {
+	margin: 38px;
+	text-align: center;
+	font-size: $heading-font-size;
+	color: $white;
+	line-height: 1.5;
+	text-transform: uppercase;
+	@media (max-width: $mobile) {
+		font-size: 26px;
+	}
+}

@@ -1,0 +1,21 @@
+@import 'src/assets/styles/variables';
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	> button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		font-size: $icons-font-size;
+		color: $white;
+		transition: 0.3s;
+
+		&:hover {
+			color: #ffffff;
+			transform: scale(1.05);
+		}
+	}
+}

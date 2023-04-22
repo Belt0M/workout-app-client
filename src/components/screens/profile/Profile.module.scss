@@ -1,0 +1,21 @@
+.images-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	div {
+		position: relative;
+		top: 5vh;
+		width: 40%;
+		height: 40vh;
+		text-align: center;
+
+		span {
+			font-size: 16px;
+		}
+
+		img {
+			border-radius: 12px;
+		}
+	}
+}

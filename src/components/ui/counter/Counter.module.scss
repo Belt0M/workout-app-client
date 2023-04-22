@@ -1,0 +1,21 @@
+@import 'src/assets/styles/variables';
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba($black, 0.6);
+
+	div {
+		margin: 10px;
+		width: 70px;
+		text-align: center;
+
+		span {
+			color: darken($white, 20%);
+		}
+
+		h4 {
+			color: $white;
+		}
+	}
+}
