@@ -1,21 +1,31 @@
-.images-wrapper {
+@import 'src/assets/styles/variables';
+
+.before_after {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	@media (max-width: $mobile) {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-	div {
-		position: relative;
-		top: 5vh;
-		width: 40%;
-		height: 40vh;
-		text-align: center;
-
-		span {
-			font-size: 16px;
-		}
-
-		img {
-			border-radius: 12px;
+	> div {
+		width: 50%;
+		@media (max-width: $mobile) {
+			width: 48%;
 		}
 	}
+
+	img {
+		border-radius: 10px;
+	}
+
+	.heading {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.center {
+	text-align: center;
+	margin: 6px 0 18px;
 }

@@ -4,10 +4,11 @@
 	display: flex;
 	justify-content: space-between;
 	background-color: rgba($black, 0.6);
+	border-radius: 5px;
 
 	div {
-		margin: 10px;
-		width: 70px;
+		margin: 10px 15px;
+		width: 100px;
 		text-align: center;
 
 		span {

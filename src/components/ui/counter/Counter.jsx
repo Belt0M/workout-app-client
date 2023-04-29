@@ -1,20 +1,18 @@
+import { useProfile } from '../../../hooks/useProfile'
+
 import styles from './Counter.module.scss'
 
 const Counter = () => {
+	const { data } = useProfile()
+
 	return (
 		<div className={styles.wrapper}>
-			<div>
-				<span>Minutes</span>
-				<h4>20</h4>
-			</div>
-			<div>
-				<span>Level</span>
-				<h4>Hard</h4>
-			</div>
-			<div>
-				<span>Up</span>
-				<h4>5%</h4>
-			</div>
+			{data?.statistic?.map(s => (
+				<div key={s.label}>
+					<span>{s.label}</span>
+					<h4>{s.value}</h4>
+				</div>
+			))}
 		</div>
 	)
 }
