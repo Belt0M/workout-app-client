@@ -18,7 +18,7 @@ class ExerciseLogService {
 	}
 
 	async complete(id) {
-		return $axios.put(`${LOG}/complete${id}`)
+		return $axios.patch(`${LOG}/complete/${id}`)
 	}
 }
 export default new ExerciseLogService()

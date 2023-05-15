@@ -14,11 +14,11 @@ class ExerciseLogService {
 	}
 
 	async updateTime(timeId, body) {
-		return $axios.put(`${LOG}/${timeId}`, body)
+		return $axios.put(`${LOG}/time/${timeId}`, body)
 	}
 
-	async complete(timeId, body) {
-		return $axios.put(`${LOG}/complete${timeId}`, body)
+	async complete(id, body) {
+		return $axios.patch(`${LOG}/complete/${id}`, body)
 	}
 }
 export default new ExerciseLogService()

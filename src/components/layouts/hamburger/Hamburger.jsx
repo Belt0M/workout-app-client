@@ -11,7 +11,11 @@ const Hamburger = () => {
 
 	return (
 		<div className={styles.wrapper} ref={ref}>
-			<button className={styles.menu_icon} onClick={() => setIsShow(!isShow)}>
+			<button
+				className={styles.menu_icon}
+				onClick={() => setIsShow(!isShow)}
+				aria-label='Open menu'
+			>
 				{isShow ? <IoClose /> : <CgMenuRight />}
 			</button>
 			<Menu isShow={isShow} setIsShow={setIsShow} />

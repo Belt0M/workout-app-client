@@ -10,7 +10,7 @@ const Counter = () => {
 			{data?.statistic?.map(s => (
 				<div key={s.label}>
 					<span>{s.label}</span>
-					<h4>{s.value}</h4>
+					<p>{s.value}</p>
 				</div>
 			))}
 		</div>
